@@ -1,0 +1,39 @@
+.booking-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.booking-card:hover {
+  transform: translateY(-4px);
+}
+
+.booking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-tag {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+.status-tag.confirmed {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-tag.pending {
+  background-color: #fff8e1;
+  color: #f9a825;
+}
+
+.status-tag.cancelled {
+  background-color: #ffebee;
+  color: #c62828;
+}

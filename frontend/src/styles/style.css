@@ -1,0 +1,506 @@
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Dashboard Title */
+.dashboard-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #1f2937;
+}
+
+/* Grid Layout */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Card Styling */
+.dashboard-card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Title */
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+/* Card Text */
+.card-text {
+  font-size: 15px;
+  color: #4b5563;
+}
+
+/* Link Text */
+.link-text {
+  color: #2563eb;
+  word-break: break-all;
+}
+/* login */
+/* Animated Gradient Background */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #2563eb, #4f46e5, #f43f5e, #fb7185);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  padding: 20px;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* Welcome Header */
+.welcome-header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+/* Form Card with Shadow */
+.form-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  backdrop-filter: blur(10px); /* nice glass effect */
+  transition: transform 0.3s;
+}
+
+.form-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Form Title */
+.form-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #111827;
+  text-align: center;
+}
+
+/* Inputs */
+.form-input {
+  width: 98%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.form-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 6px rgba(37,99,235,0.4);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #2563eb;
+  color: #fff;
+  padding: 12px 0;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1e40af;
+  transform: scale(1.03);
+}
+
+/* Form Footer */
+.form-footer {
+  font-size: 0.9rem;
+  margin-top: 20px;
+  text-align: center;
+  color: #374151;
+}
+
+.text-link {
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* registered */
+
+.welcome-header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #2563eb; /* nice blue accent */
+}
+
+/* Form Card */
+.form-card {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Title */
+.form-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #1f2937;
+}
+
+/* Form Inputs */
+.form-input {
+  /* width: 100%; */
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.form-input:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+/* Form Button */
+.btn-block {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s ease;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+/* Form Footer */
+.form-footer {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.text-link {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+/* BookingsList  */
+
+/* Page Title */
+.page-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1f2937;
+  text-align: center;
+}
+
+/* Empty state text */
+.empty-text {
+  font-size: 16px;
+  color: #6b7280;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Bookings List */
+.bookings-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Booking Card */
+.booking-card {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.booking-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Booking info text */
+.booking-info {
+  font-size: 16px;
+  color: #374151;
+}
+/* BookingPage */
+
+/* Small Buttons (for Booking) */
+.btn-small {
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+/* Reuse bookings-list and booking-card styles for slots */
+/* AvailabilitySetup */
+
+/* Availability Form */
+.availability-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 500px) {
+  .availability-form {
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+/* Reuse existing .form-input and .btn styles for inputs and buttons */
+
+/* SlotList */
+
+
+/* Slot List is same as BookingsList */
+.bookings-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Booking Card */
+.booking-card {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.booking-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Booking Info Text */
+.booking-info {
+  font-size: 16px;
+  color: #374151;
+}
+
+/* Small Button for Slot Booking */
+.btn-small {
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+/* Navbar.jsx */
+
+/* Navbar */
+.navbar {
+  background-color: #1f2937;
+  color: #ffffff;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #60a5fa;
+}
+
+/* Button in navbar */
+.btn-small {
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+.btn-danger {
+  background-color: #dc2626;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-danger:hover {
+  background-color: #b91c1c;
+}
+
+/* calender */
+
+
+
+
+/* Calendar Card */
+.calendar-card {
+  max-width: 280px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Calendar Header */
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-month {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Calendar Grid */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+/* Day Name */
+.calendar-day-name {
+  font-weight: 600;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* Day Cells */
+.calendar-day {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.calendar-day:hover {
+  background-color: #e0e7ff;
+}
+
+.today {
+  background-color: #2563eb;
+  color: #fff;
+}
+
