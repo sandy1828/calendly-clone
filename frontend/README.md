@@ -1,8 +1,3 @@
-Perfect 👍 Here’s a **professional `README.md`** for your **Calendly Clone (Appointment Scheduling App)** project — structured for GitHub or Vercel deployment.
-
----
-
-```markdown
 # 🗓️ Calendly Clone – Appointment Scheduling Web App
 
 A full-stack appointment scheduling system inspired by **Calendly**, built using the **MERN stack** (MongoDB, Express.js, React.js, Node.js).  
@@ -87,10 +82,12 @@ cd calendly-clone
 # Backend
 cd server
 npm install
+node server.js
 
 # Frontend
-cd ../client
+cd ../frontend
 npm install
+npm start
 ```
 
 ### 3️⃣ Environment Variables
@@ -145,7 +142,7 @@ Then open [http://localhost:3000](http://localhost:3000).
 
 | Dashboard | Booking Page |
 | ---------- | ------------- |
-| ![Dashboard](./public/assets/dashboard.png) | ![Booking](./public/assets/booking.png) |
+| ![Dashboard](./frontend/public/assets/dashboard.png) | ![Booking](./frontend/public/assets/booking.png) |
 
 ---
 
