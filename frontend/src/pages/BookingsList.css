@@ -1,56 +1,88 @@
-/* Page container */
+/* --------------------
+   BookingsList.css
+-------------------- */
+
 .container {
   max-width: 900px;
-  margin: 0 auto;
-  padding: 24px;
+  margin: 40px auto;
+  padding: 0 20px;
   font-family: 'Inter', sans-serif;
-  color: #1f2937;
+  color: #333;
 }
 
-/* Page title */
 .page-title {
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 16px;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #1a202c;
 }
 
-/* Empty state text */
 .empty-text {
-  font-size: 16px;
-  color: #6b7280;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #718096;
+  margin-top: 50px;
 }
 
-/* Bookings list */
 .list {
   list-style: none;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
 }
 
-/* Booking item card */
 .list-item {
-  background: #fefefe;
-  padding: 16px;
+  background-color: #ffffff;
   border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .list-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.list-item strong {
+  color: #2d3748;
+}
+
+.list-item a {
+  color: #3182ce;
+  text-decoration: none;
+  word-break: break-word;
+  transition: color 0.2s;
+}
+
+.list-item a:hover {
+  color: #2b6cb0;
+  text-decoration: underline;
+}
+
+/* Optional: add subtle divider between fields */
+.list-item div + div {
+  padding-top: 4px;
+  border-top: 1px solid #edf2f7;
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+  }
+
   .list-item {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
+    padding: 15px;
   }
 }

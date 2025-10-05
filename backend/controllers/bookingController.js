@@ -128,9 +128,8 @@ exports.createPublic = async (req, res) => {
     if (conflict) return res.status(400).json({ msg: "Slot already booked" });
 
     // Generate meet link
-    const meetLink = `https://meet.google.com/${Math.random()
-      .toString(36)
-      .substring(2, 7)}-${Math.random().toString(36).substring(2, 7)}`;
+    const meetLink = "https://meet.google.com/gda-zemy-baw";
+
 
     // Save booking
     const booking = await Booking.create({

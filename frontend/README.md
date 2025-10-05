@@ -142,7 +142,7 @@ Then open [http://localhost:3000](http://localhost:3000).
 
 | Dashboard | Booking Page |
 | ---------- | ------------- |
-| ![Dashboard](./public/assets/dashboard.png) | ![Booking](./public/assets/booking.png) |
+| ![Dashboard](../frontend/public/assets/dashboard.png) | ![Booking](../frontend/public/assets/booking.png) |
 
 ---
 
