@@ -1,0 +1,147 @@
+[33mcommit 77d96d2965b32a96704ae4dfb68548bc6b3d0b04[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: sandy1828 <digital.sandeepsanotra@gmail.com>
+Date:   Sun Oct 5 11:57:26 2025 +0530
+
+    Remove sensitive files and add to .gitignore
+
+ backend/.env | 25 [31m-------------------------[m
+ 1 file changed, 25 deletions(-)
+
+[33mcommit ec550729403b1ca6ab78350cb14a55417d6b8d2b[m
+Author: sandy1828 <digital.sandeepsanotra@gmail.com>
+Date:   Sun Oct 5 11:54:55 2025 +0530
+
+    Describe your new changes here
+
+ backend/.env                             |   5 [32m+[m
+ backend/controllers/bookingController.js |   5 [32m+[m[31m-[m
+ backend/controllers/zoom.js              |  11 [32m+[m
+ backend/credentials.json                 |  10 [32m+[m
+ backend/package-lock.json                | 435 [32m+++++++++++++++++++++++++++++++[m
+ backend/package.json                     |   2 [32m+[m
+ frontend/README.md                       |   2 [32m+[m[31m-[m
+ frontend/src/pages/BookingsList.css      |  88 [32m+++++[m[31m--[m
+ 8 files changed, 526 insertions(+), 32 deletions(-)
+
+[33mcommit d22bfd495661c4ae49a9807640b3dde271a8950a[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: sandeep sanotra <digital.sandeepsanotra@gmail.com>
+Date:   Sun Oct 5 00:59:27 2025 +0530
+
+    Update README.md
+
+ frontend/README.md | 2 [32m+[m[31m-[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[33mcommit c85ad0159ad6b00cf93aea874869a67c03af0b94[m
+Author: sandeep sanotra <digital.sandeepsanotra@gmail.com>
+Date:   Sun Oct 5 00:58:55 2025 +0530
+
+    Update README.md
+
+ frontend/README.md | 11 [32m++++[m[31m-------[m
+ 1 file changed, 4 insertions(+), 7 deletions(-)
+
+[33mcommit cc93b3cfcb32ed403903da76e0e62314bfca17bf[m
+Author: sandeep sanotra <digital.sandeepsanotra@gmail.com>
+Date:   Sun Oct 5 00:58:26 2025 +0530
+
+    Update README.md
+
+ README.md | 9 [32m+++[m[31m------[m
+ 1 file changed, 3 insertions(+), 6 deletions(-)
+
+[33mcommit 33d23158131ae443fddc72e72d7fccc8c88a4073[m
+Author: sandeep sanotra <digital.sandeepsanotra@gmail.com>
+Date:   Sun Oct 5 00:54:35 2025 +0530
+
+    Create README.md
+
+ README.md | 171 [32m++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m
+ 1 file changed, 171 insertions(+)
+
+[33mcommit 4e11daf142f8e5b5aa3919b90aa5ba565ef36079[m
+Author: sandy1828 <digital.sandeepsanotra@gmail.com>
+Date:   Sun Oct 5 00:52:47 2025 +0530
+
+    Added frontend folder contents properly
+
+ frontend                                 |     1 [31m-[m
+ frontend/.gitignore                      |    23 [32m+[m
+ frontend/README.md                       |   171 [32m+[m
+ frontend/package-lock.json               | 18304 [32m+++++++++++++++++++++++++++++[m
+ frontend/package.json                    |    53 [32m+[m
+ frontend/public/assets/booking.png       |   Bin [31m0[m -> [32m44168[m bytes
+ frontend/public/assets/dashboard.png     |   Bin [31m0[m -> [32m790326[m bytes
+ frontend/public/favicon.ico              |   Bin [31m0[m -> [32m3870[m bytes
+ frontend/public/index.html               |    12 [32m+[m
+ frontend/public/logo192.png              |   Bin [31m0[m -> [32m5347[m bytes
+ frontend/public/logo512.png              |   Bin [31m0[m -> [32m9664[m bytes
+ frontend/public/manifest.json            |    25 [32m+[m
+ frontend/public/robots.txt               |     3 [32m+[m
+ frontend/src/App.css                     |    38 [32m+[m
+ frontend/src/App.js                      |    28 [32m+[m
+ frontend/src/App.test.js                 |     8 [32m+[m
+ frontend/src/api/api.js                  |    15 [32m+[m
+ frontend/src/components/CalendarMini.jsx |   152 [32m+[m
+ frontend/src/components/Loader.jsx       |     5 [32m+[m
+ frontend/src/components/Navbar.jsx       |    40 [32m+[m
+ frontend/src/components/SlotList.jsx     |    26 [32m+[m
+ frontend/src/index.css                   |    13 [32m+[m
+ frontend/src/index.js                    |     7 [32m+[m
+ frontend/src/logo.svg                    |     1 [32m+[m
+ frontend/src/pages/AvailabilitySetup.jsx |   222 [32m+[m
+ frontend/src/pages/BookingPage.css       |   110 [32m+[m
+ frontend/src/pages/BookingPage.jsx       |    90 [32m+[m
+ frontend/src/pages/BookingsList.css      |    56 [32m+[m
+ frontend/src/pages/BookingsList.jsx      |    54 [32m+[m
+ frontend/src/pages/Dashboard.jsx         |   153 [32m+[m
+ frontend/src/pages/Login.jsx             |    66 [32m+[m
+ frontend/src/pages/Profile.jsx           |    32 [32m+[m
+ frontend/src/pages/Register.jsx          |    69 [32m+[m
+ frontend/src/reportWebVitals.js          |    13 [32m+[m
+ frontend/src/setupTests.js               |     5 [32m+[m
+ frontend/src/style/dash.css              |   191 [32m+[m
+ frontend/src/styles/avai.css             |    97 [32m+[m
+ frontend/src/styles/bookingCard.css      |    39 [32m+[m
+ frontend/src/styles/filterBar.css        |    13 [32m+[m
+ frontend/src/styles/pro.css              |    67 [32m+[m
+ frontend/src/styles/style.css            |   506 [32m+[m
+ frontend/src/styles/style2.css           |    65 [32m+[m
+ frontend/src/styles/styleca.css          |    93 [32m+[m
+ frontend/tailwind.config.js              |     5 [32m+[m
+ 44 files changed, 20870 insertions(+), 1 deletion(-)
+
+[33mcommit 883179e35d114037d9d50c6df5ba80d33b1338f1[m
+Author: sandy1828 <digital.sandeepsanotra@gmail.com>
+Date:   Sun Oct 5 00:41:37 2025 +0530
+
+    Initial commit - Calendly Clone full project
+
+ backend/.env                                       |   20 [32m+[m
+ backend/config/db.js                               |   13 [32m+[m
+ backend/controllers/authController.js              |   44 [32m+[m
+ backend/controllers/availabilityController.js      |   78 [32m+[m
+ backend/controllers/bookingController.js           |  206 [32m+++[m
+ backend/controllers/dashboardController.js         |   31 [32m+[m
+ .../controllers/publicAvailabilityController.js    |   15 [32m+[m
+ backend/controllers/userController.js              |   25 [32m+[m
+ backend/middleware/auth.js                         |   14 [32m+[m
+ backend/middleware/errorHandler.js                 |    4 [32m+[m
+ backend/middleware/validate.js                     |   31 [32m+[m
+ backend/models/Availability.js                     |   34 [32m+[m
+ backend/models/Booking.js                          |   16 [32m+[m
+ backend/models/User.js                             |   10 [32m+[m
+ backend/package-lock.json                          | 1728 [32m++++++++++++++++++++[m
+ backend/package.json                               |   25 [32m+[m
+ backend/routes/auth.js                             |   17 [32m+[m
+ backend/routes/availability.js                     |    9 [32m+[m
+ backend/routes/bookings.js                         |   15 [32m+[m
+ backend/routes/dashboard.js                        |    8 [32m+[m
+ backend/routes/publicAvailability.js               |    7 [32m+[m
+ backend/routes/user.js                             |    7 [32m+[m
+ backend/server.js                                  |   21 [32m+[m
+ backend/utils/mailer.js                            |   27 [32m+[m
+ backend/utils/sendEmail.js                         |   24 [32m+[m
+ backend/utils/upload.js                            |   23 [32m+[m
+ frontend                                           |    1 [32m+[m
+ 27 files changed, 2453 insertions(+)
